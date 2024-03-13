@@ -157,14 +157,12 @@ header {
   background:#efc01a;
 }
 .content-test-img {
-    display: none;
     width: 350px;
 }
 .content {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    border: 1px solid;
 }
 section {
     flex-basis: 27%;
@@ -179,7 +177,6 @@ article {
     justify-content: space-around;
     align-items: center;
     margin: 40px 0;
-    border: 1px solid;
 }
 article img {
     border-radius: 100%;
@@ -218,10 +215,13 @@ aside p {
     margin-bottom: 25px;
     position: relative;
 }
+.wrap_title .title:hover .icons {
+    display: block;
+}
 .wrap_title .icons {
     position: absolute;
     padding: 5px;
-    border: 1px solid;
+    display: none;
 }
 .wrap_title .icons span {
     display: inline-block;
@@ -234,7 +234,7 @@ aside p {
     cursor: pointer;
 }
 .wrap_title .icons span:hover {
-    background: rbga(33,198,74,0.5);
+    background: rgba(33,198,74,0.5);
 }
 .wrap_title p {
     font-size: 14px;
@@ -257,7 +257,25 @@ aside p {
 .wrap_title .title .bottom span {
     color: #bab6b6;
 }
-.wrap_title .title .bottom span a{
+.wrap_title .title .bottom a {
     color: #83b85c;
     text-decoration: none;
+}
+.wrap_title .title .bottom a:hover {
+    text-decoration: underline;
+}
+.pagination {
+    text-align: center;
+}
+.pagination span {
+    display: inline-block;
+    background: #13a2b2;
+    color: #fff;
+    width: 20px;
+    padding: 3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.pagination span:hover{
+    background: #8dca3e;
 }
