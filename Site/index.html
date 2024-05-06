@@ -5,15 +5,17 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Моя сторінка, html-сторінка, web-документ /">
     <meta name="description" content="Моя перша HTML-сторінка" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-equiv="content-language" content="en-us">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css"/>
     <!--script src="https://use.fontawesome.com/219ee59df6.js"></script>-->
 </head>
 <body>
     <header>
     <div class="top_wrap">
         <div>
-        <div class="logo"><img src="image2/image" alt=""/></div>
+        <div class="logo"><img src="image/logo.png" alt=""/></div>
             <div class="description">
             Будівництво-це матеріальне виробництво, в якому створюютьсч омновні фонди втробничого та не виробничого.
             </div>
@@ -22,6 +24,8 @@
     </header>
     <div class="container">
         <div class="menu">
+        <input type="checkbox" id="menu_toggle"/>
+        <label for="menu_toggle">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="#">Головна</a></li>
@@ -42,10 +46,12 @@
             </ul>
         </nav>
             <form action="" method="POST">
-                <input type="text"/>
+                <label>
+                    <input type="text"/>
+                </label>
                 <button type="button"><i class="fa fa-search"></i></button>
             </form>
-            <img src="image2/image/house4.png" alt=""/>
+            <img src="image/house4.png" alt=""/>
         </div>
         <div class="soc_icons">
             <p>Підписатися на наші новини:
@@ -73,15 +79,15 @@
                 <section>
                     <h2>Новини</h2>
                     <article>
-                        <img class="content-img" src="image2/image/19.png" alt=""/>
+                        <img class="content-img" src="image/19.png" alt=""/>
                         <p>Будівництво і ремонт, вибір підрядчика</p>
                     </article>
                     <article>
-                        <img class="content-img" src="image2/image/19.png" alt=""/>
+                        <img class="content-img" src="image/19.png" alt=""/>
                         <p>Будівництво і ремонт, вибір підрядчика</p>
                     </article>
                     <article>
-                        <img class="content-img" src="image2/image/19.png" alt=""/>
+                        <img class="content-img" src="image/19.png" alt=""/>
                         <p>Будівництво і ремонт, вибір підрядчика</p>
                     </article>
                     <aside>
@@ -95,7 +101,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -108,7 +114,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -121,7 +127,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -134,7 +140,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -147,7 +153,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -160,7 +166,7 @@
                               <span>&#10084;</span>
                               <span>&#10150;</span>
                           </div>
-                          <img class="content-test-img" src="image2/image/house.png" alt=""/>
+                          <img class="content-test-img" src="image/house.png" alt=""/>
                           <p>Як вірно вибрати матеріал для дому</p>
                           <p>Користувачів цікавить способи будівництва будинків, які в наш час важаються найкращими</p>
                           <div class="bottom">
@@ -180,8 +186,49 @@
     </div>
     </div>
     <div class="gallery">
+        <h2>Галерея</h2>
+        <div class="slider">
+            <div class="arrow_left"></div>
+            <div class="photo">
+                <a href="image/title.jpg" target="_blank"><img src="image/titleSmall.jpg" alt=""></a>
+                <a href="image/title.jpg" target="_blank"><img src="image/titleSmall.jpg" alt=""></a>
+                <a href="image/title.jpg" target="_blank"><img src="image/titleSmall.jpg" alt=""></a>
+                <a href="image/title.jpg" target="_blank"><img src="image/titleSmall.jpg" alt=""></a>
+            </div>
+            <div class="arrow_right"></div>
+        </div>
+
     </div>
     <footer>
+        <nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Продукти</a></li>
+                    <li><a href="#">Про нас</a> </li>
+                    <li><a href="#">Фотогалерея</a> </li>
+                    <li><a href="#">Новини</a> </li>
+                    <li><a href="#">Контакти</a> </li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="titles">
+            <div class="links">
+                <div class="left">
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                </div>
+                <div class="right">
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                    <a href="#">Посилання на тематичну статью</a>
+                </div>
+            </div>
+        </div>
+            <p>Будівництво, 2019 &copy; Всі права захищенні</p>
     </footer>
 </body>
 </html>
